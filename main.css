@@ -1,0 +1,162 @@
+.titulo-principal {
+    text-align: center;
+    color: #FFE81F;
+    position: relative;
+}
+
+.titulo-principal::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 12.5%;
+    right: 12.5%;
+    bottom: -5px;
+    border: 3px solid transparent;
+    border-top-color: #FFE81F;
+    border-bottom-color: #FFE81F;
+    border-left-color: #FFE81F;
+    border-right-color: #FFE81F;
+    border-radius: 10px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 255, 0.5);
+    animation: glowBlue 1s infinite alternate;
+}
+
+@keyframes glowBlue {
+    0% {
+        box-shadow: 0 0 5px rgba(0, 0, 255, 0.2);
+    }
+    100% {
+        box-shadow: 0 0 20px rgba(0, 0, 255, 0.8);
+    }
+}
+
+
+.resume__timelines {
+    margin-bottom: 5rem;
+}
+
+.timelines__timeline {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1.5rem;
+}
+
+.timeline__header {
+    flex-basis: 30%;
+    text-align: right;
+    padding-right: 2.5rem;
+}
+
+.timeline__year {
+    color: white;
+    margin: 0.3rem 0;
+    line-height: 1.9rem;
+    font-size: 1.4rem;
+}
+
+.timeline__company {
+    display: block;
+    font-size: 1.3rem;
+    font-weight: lighter;
+    color: blue;
+}
+
+.timeline__description {
+    width: 70%;
+    padding-left: 2.5rem;
+    padding-right: 1.5rem;
+    text-align: left;
+    /*esto lo agregue*/
+}
+
+.timeline__title {
+    font-size: 1.6rem;
+    margin-bottom: 0.3rem;
+}
+
+.timeline__text1, .timeline__text2, .timeline__text3 {
+    color: white;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    margin: 10px;
+   
+
+    /* Propiedades para el efecto de sable de luz */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.5); /* Sombra interna azul */
+    animation: glowBlue 1s infinite alternate;
+}
+
+@keyframes glowBlue {
+    0% {
+        box-shadow: 0 0 5px rgba(0, 0, 255, 0.2);
+    }
+    100% {
+        box-shadow: 0 0 20px rgba(0, 0, 255, 0.8);
+    }
+}
+
+.timeline__divider {
+    position: absolute;
+    top: 0;
+    left: 30%;
+    bottom: -25px;
+    width: 3px;
+    background-color: #39ff14; /* Color base del sable */
+
+    /* Propiedades para el efecto de sable de luz */
+    border-radius: 10px; /* Bordes redondeados para suavizar las puntas */
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5); /* Sombra interna para dar profundidad */
+    animation: glow 1s infinite alternate; /* Animación de brillo */
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 5px rgba(0, 255, 0, 0.2);
+    }
+    100% {
+        box-shadow: 0 0 20px rgba(0, 255, 0, 0.8);
+    }
+}
+
+.timeline__divider::before {
+    content: "";
+    position: absolute;
+    margin-top: 0.4rem;
+    margin-left: -0.9rem;
+    width: 1.7rem;
+    height: 1.7rem;
+    background-color: green;
+    border-radius: 10rem;
+    opacity: 0.25;
+}
+
+.timeline__divider::after {
+    content: "";
+    position: absolute;
+    margin-top: 0.8rem;
+    margin-left: -0.5rem;
+    width: 0.9rem;
+    height: 0.9rem;
+    background-color: yellow;
+    border-radius: 10rem;
+    border: brown;
+    opacity: 1;
+}
+
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .card {
+    width: 200px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+  }
